@@ -1,8 +1,28 @@
 aid: freshmenu
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/freshmenu.png
 name: Freshmenu
-description: Freshmenu is a company surfaced as a portfolio company of lightspeed-venture-partners and
-  added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  FreshMenu is a Bengaluru-based full-stack food-technology company that operates
+  its own cloud kitchens and cooks, packages, and delivers a daily-changing menu of
+  fresh gourmet meals directly to consumers. Unlike aggregator marketplaces, FreshMenu
+  owns the end-to-end experience — from culinary R&D and kitchen operations to its
+  consumer ordering website and mobile apps — serving Bengaluru, Mumbai, and the
+  Delhi/NCR region (New Delhi and Gurgaon). The company is backed by Lightspeed
+  Venture Partners and was surfaced into the API Evangelist network as a portfolio
+  lead. It publishes a consumer ordering experience but no public API or developer
+  program; this profile captures its identity and infrastructure posture for the
+  enrichment pipeline.
 url: https://raw.githubusercontent.com/api-evangelist/freshmenu/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,12 +32,28 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Food Delivery
+- Food Technology
+- Cloud Kitchen
+- Restaurant
+- Consumer
+- India
 apis: []
+common:
+- type: Website
+  url: https://www.freshmenu.com
+- type: DomainSecurity
+  url: security/freshmenu-domain-security.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

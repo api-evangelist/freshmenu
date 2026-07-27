@@ -1,0 +1,31 @@
+generated: '2026-07-19'
+method: probed
+source: freshmenu.com (DNS + TLS + HTTP header probe)
+host: https://www.freshmenu.com
+notes: >-
+  FreshMenu runs a consumer food-ordering website fronted by Cloudflare. There is
+  no public API / developer program, so this probe covers the corporate/consumer
+  web domain only. Absence of a record below is honest, observed data — not a gap
+  in this file.
+tls:
+  present: true
+  issuer: "Let's Encrypt (E8)"
+  not_before: '2026-05-26'
+  not_after: '2026-08-24'
+hsts:
+  present: false
+  header: null
+edge:
+  cdn: cloudflare
+dnssec:
+  present: false
+caa:
+  present: false
+  records: []
+spf:
+  present: true
+  record: "v=spf1 include:_spf.google.com include:in-iwc-spf.icewarpcloud.in ~all"
+dmarc:
+  present: true
+  policy: none
+  record: "v=DMARC1; p=none;"
