@@ -35,6 +35,9 @@ description: >-
   program; this profile captures its identity and infrastructure posture for the
   enrichment pipeline.
 url: https://raw.githubusercontent.com/api-evangelist/freshmenu/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "It publishes a consumer ordering experience but no public API or developer program; this profile captures its identity and infrastructure posture for the enrichment pipeline."
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
